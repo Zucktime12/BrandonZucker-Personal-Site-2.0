@@ -1,0 +1,47 @@
+$white:             #FFFFFF;   
+$color-1:           #003773;
+$color-2:           #cf671a;
+$color-3:           #a1a1a1;
+
+$galaxy:        1140px;
+$solarsystem:   1024px;
+$interstellar:  800px;
+$planetary:     520px;
+
+
+$fam-body:          'Open Sans', sans-serif;
+$fam-heading:       $fam-body;
+
+body {
+	margin: 0;
+}
+
+[class*="__inner"] {
+    max-width: 1230px;
+    margin: 0 auto;
+    clear: both;
+    padding: 0 20px;
+}
+
+.button {
+	margin: 0 auto;
+	font-size: 18px;
+	font-family: $fam-body;
+	padding: 12px 20px;
+	background-color: $white;
+	outline: 0;
+	border: 2px solid $color-1;
+	display: inline-block;
+	color: $color-1;
+	text-decoration: none;
+
+	&:after {
+		content: '→';
+		color: $color-2;
+		padding-left: 5px;
+	}
+}
+
+li {
+	font-family: $fam-body;
+}
