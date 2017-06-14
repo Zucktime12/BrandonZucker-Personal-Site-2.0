@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0; }
 
@@ -13,16 +12,15 @@ body {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   padding: 12px 20px;
-  background-color: #FFFFFF;
   outline: 0;
   border: 2px solid #506276;
   display: inline-block;
   color: #506276;
-  text-decoration: none; }
-  .button:after {
-    content: '→';
-    color: #212531;
-    padding-left: 5px; }
+  text-decoration: none;
+  transition: all 400ms ease; }
+  .button:hover {
+    background-color: #506276;
+    color: #FFFFFF; }
 
 li {
   font-family: "Open Sans", sans-serif; }
