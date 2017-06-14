@@ -1,0 +1,30 @@
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+    width: 100%;
+}
+
+#nav_bar {
+	border: 0;
+	background-color: $color-1;
+	padding: 20px 0;
+	border-radius: 0px;
+	margin-bottom: 0;
+    height: 30px;
+}
+
+.nav_links {
+    margin: 0;
+    text-align: center;
+}
+
+.nav_links li {
+	display: inline-block;
+    margin-top: 4px;
+}
+.nav_links li a {
+	padding: 0 15.5px;
+	color: $white;
+	text-decoration: none;
+}

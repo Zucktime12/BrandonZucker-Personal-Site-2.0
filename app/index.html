@@ -20,11 +20,21 @@
 				<div class="hero-text">
 					<div class="hero-text__background js-scale" style="background: url(images/photo.jpg) no-repeat center center; background-size: cover;"></div>
 					<div class="hero-text__inner">  
-						<h1 class="js-from-left" style="background-color: rgba(80,98,118,0.8);">Heading One</h1><br>            
-						<h1 class="js-from-left" style="background-color: rgba(80,98,118,0.8);">Heading Two</h1><br>  
+						<div class="hero-text__image js-from-left"></div>
+						<h1 class="js-from-left">Heading One</h1>            
+						<h2 class="js-from-left">Heading Two</h2>
 					</div>    
 				</div>
-			</section>                      
+			</section>   
+
+			<nav id='nav_bar'>
+			    <ul class='nav_links'>
+			      <li><a href="url">Nav Bar</a></li>
+			      <li><a href="url">Sign In</a></li>
+			      <li><a href="url">Blog</a></li>
+			      <li><a href="url">About</a></li>
+			    </ul>
+			</nav>                   
 									
 			<section class="module-one-column-content one-column-content js-ease">
 				<div class="one-column-content__inner">
@@ -138,12 +148,13 @@
 			</section>
 		</main>
 
-		<footer></footer>
+		
 	</div>
 	
 	<!--build:js js/main.min.js -->
 	<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js?ver=1.10.1'></script>
 	<script src="js/lib/inview.js"></script>
+	<script src="js/lib/nav.js"></script>
 	<script src="js/lib/active-animation.js"></script>
 	<script src="js/lib/scale.js"></script>
 	<script src="js/main.js"></script>

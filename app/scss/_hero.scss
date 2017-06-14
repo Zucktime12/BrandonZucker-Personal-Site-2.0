@@ -1,7 +1,6 @@
 .hero-text {
 	min-height: 60vh;
 	width: 100%;
-	border-bottom: 4px solid $color-1;
 	display: flex;
 	align-items: center;
 	text-align: left;
@@ -25,6 +24,17 @@
 	&__inner {
 		padding: 60px 20px;
 		flex: 1;
+		text-align: center;
+	}
+
+	&__image {
+		width: 160px;
+		height: 160px;
+		border-radius: 100%;
+		border: 3px solid $white;
+		margin: 0 auto;
+		background: url(../images/photo.jpg) no-repeat center center;
+		background-size: cover;
 	}
 
 
@@ -34,9 +44,15 @@
 		font-family: $fam-heading;
 		font-size: 40px;
 		font-weight: normal;
-		display: inline-block;
-		padding: 25px;
-		line-height: 1.2;
+		margin: 0;
+		padding: 20px 0;
+		display: block;
+	}
+
+	h2 {
+		display: block;
+		color: $white;
+		font-family: $fam-heading;
 	}
 }
 
