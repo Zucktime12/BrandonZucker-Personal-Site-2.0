@@ -103,25 +103,25 @@ li {
   transform: translateX(-50px);
   transition-property: transform, opacity;
   transition-duration: 2s;
-  transition-delay: 200ms; }
+  transition-delay: 0ms; }
   .js-from-left:nth-child(1) {
-    transition-delay: 150ms; }
+    transition-delay: 10ms; }
   .js-from-left:nth-child(2) {
-    transition-delay: 300ms; }
+    transition-delay: 20ms; }
   .js-from-left:nth-child(3) {
-    transition-delay: 450ms; }
+    transition-delay: 30ms; }
   .js-from-left:nth-child(4) {
-    transition-delay: 600ms; }
+    transition-delay: 40ms; }
   .js-from-left:nth-child(5) {
-    transition-delay: 750ms; }
+    transition-delay: 50ms; }
   .js-from-left:nth-child(6) {
-    transition-delay: 900ms; }
+    transition-delay: 60ms; }
   .js-from-left:nth-child(7) {
-    transition-delay: 1050ms; }
+    transition-delay: 70ms; }
   .js-from-left:nth-child(8) {
-    transition-delay: 1200ms; }
+    transition-delay: 80ms; }
   .js-from-left:nth-child(9) {
-    transition-delay: 1350ms; }
+    transition-delay: 90ms; }
   .js-from-left.active {
     transform: translate(0px, 0px);
     opacity: 1; }

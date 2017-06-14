@@ -61,9 +61,9 @@
     transform: translateX(-50px);
     transition-property: transform, opacity;
     transition-duration: 2s;
-    transition-delay: 200ms;
+    transition-delay: 0ms;
     @for $i from 1 to 10 {
-      &:nth-child(#{$i}) { transition-delay: $i * 150ms; }
+      &:nth-child(#{$i}) { transition-delay: $i * 10ms; }
     }
     &.active{
         transform: translate(0px, 0px);
