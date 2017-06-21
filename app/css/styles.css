@@ -80,7 +80,7 @@ li {
     border-radius: 100%;
     border: 3px solid #FFFFFF;
     margin: 0 auto;
-    background: url(../images/photo.jpg) no-repeat center center;
+    background: url(../images/brandon.jpg) no-repeat center center;
     background-size: cover; }
   .hero-text h1 {
     text-transform: uppercase;
@@ -442,3 +442,8 @@ p {
     z-index: -1; }
     .one-column-content__background.active {
       transform: scale(1.1); }
+
+.container{
+  max-width: 85%;
+  margin: 2% auto;
+}
