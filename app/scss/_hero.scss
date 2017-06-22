@@ -27,17 +27,6 @@
 		text-align: center;
 	}
 
-	&__image {
-		width: 160px;
-		height: 160px;
-		border-radius: 100%;
-		border: 3px solid $white;
-		margin: 0 auto;
-		background: url(../images/photo.jpg) no-repeat center center;
-		background-size: cover;
-	}
-
-
 	h1 {
 		text-transform: uppercase;
 		color: $white;
@@ -62,10 +51,12 @@
     transition-property: transform, opacity;
     transition-duration: 2s;
     transition-delay: 0ms;
+
     @for $i from 1 to 10 {
       &:nth-child(#{$i}) { transition-delay: $i * 10ms; }
     }
-    &.active{
+
+    &.active {
         transform: translate(0px, 0px);
         opacity: 1;
     }

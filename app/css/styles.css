@@ -22,8 +22,29 @@ body {
     background-color: #506276;
     color: #FFFFFF; }
 
+ul {
+  padding: 0; }
+
 li {
   font-family: "Open Sans", sans-serif; }
+
+a:not(.button) {
+  position: relative;
+  text-decoration: none; }
+  a:not(.button):before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    content: '';
+    margin-top: 8px;
+    opacity: 0;
+    transition: all 400ms ease; }
+  a:not(.button):hover:before {
+    opacity: 1;
+    margin-top: 0; }
 
 .navbar-fixed {
   top: 0;
@@ -48,7 +69,7 @@ li {
   margin-top: 4px; }
 
 .nav_links li a {
-  padding: 0 15.5px;
+  padding: 0 10px;
   color: #FFFFFF;
   text-decoration: none; }
 
@@ -74,14 +95,6 @@ li {
     padding: 60px 20px;
     flex: 1;
     text-align: center; }
-  .hero-text__image {
-    width: 160px;
-    height: 160px;
-   /* border-radius: 100%;
-    border: 3px solid #FFFFFF;*/
-    margin: 0 auto;
-    /*background: url(../images/brandon.jpg) no-repeat center center;*/
-    background-size: cover; }
   .hero-text h1 {
     text-transform: uppercase;
     color: #FFFFFF;
@@ -211,7 +224,7 @@ p {
   position: absolute;
   width: 0;
   height: 1px;
-  background-color: #D2D7DB; }
+  background-color: #a8acaf; }
   @media (max-width: 900px) {
     .two-column-content__wrapper-lines-left .left-column-content__with-lines:before {
       background-color: transparent; } }
@@ -223,7 +236,7 @@ p {
   position: absolute;
   height: 0;
   width: 1px;
-  background-color: #D2D7DB; }
+  background-color: #a8acaf; }
   @media (max-width: 900px) {
     .two-column-content__wrapper-lines-left .left-column-content__with-lines:after {
       background-color: transparent; } }
@@ -236,7 +249,7 @@ p {
   position: absolute;
   height: 1px;
   width: 0;
-  background-color: #D2D7DB; }
+  background-color: #a8acaf; }
   @media (max-width: 900px) {
     .two-column-content__wrapper-lines-left .right-column-content__with-lines:after {
       background-color: transparent; } }
@@ -267,7 +280,7 @@ p {
   position: absolute;
   height: 1px;
   width: 0;
-  background-color: #D2D7DB; }
+  background-color: #a8acaf; }
   @media (max-width: 900px) {
     .two-column-content__wrapper-lines-right .left-column-content__with-lines:after {
       background-color: transparent; } }
@@ -279,7 +292,7 @@ p {
   position: absolute;
   width: 0;
   height: 1px;
-  background-color: #D2D7DB; }
+  background-color: #a8acaf; }
   @media (max-width: 900px) {
     .two-column-content__wrapper-lines-right .right-column-content__with-lines:before {
       background-color: transparent; } }
@@ -291,7 +304,7 @@ p {
   position: absolute;
   height: 0;
   width: 1px;
-  background-color: #D2D7DB; }
+  background-color: #a8acaf; }
   @media (max-width: 900px) {
     .two-column-content__wrapper-lines-right .right-column-content__with-lines:after {
       background-color: transparent; } }
@@ -431,7 +444,14 @@ p {
   text-align: center;
   padding: 60px 0;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .one-column-content#contact {
+    min-height: 60vh; }
+  .one-column-content__has-background {
+    padding: 60px 0; }
   .one-column-content__background {
     position: absolute;
     width: 100%;
@@ -442,49 +462,22 @@ p {
     z-index: -1; }
     .one-column-content__background.active {
       transform: scale(1.1); }
-
-.container{
-  max-width: 85%;
-  margin: 2% auto;
-}
-.wrapper{
-  margin:3em 0;
-}
-.one {
-  /*margin: 8px auto 5px auto;*/
-  width: 100%;
-  padding-left: 0;
-}
-
-.one a {
-  text-decoration: none;
-  color: white;
-  position: relative;
-}
-
-.one a:before {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  content: '';
-  -webkit-transform: translateY(8px);
-  opacity: 0;
-  transition-property: -webkit-transform, opacity;
-  transition-duration: .3s;
-}
-
-.one a:hover:before {
-  -webkit-transform: translateY(0);
-  opacity: 1;
-}
-
-.white_text {
-  color: white;
-}
-
-
-
-
+  .one-column-content__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 2s ease;
+    z-index: -1; }
+    .one-column-content__background.active {
+      transform: scale(1.1); }
+  .one-column-content .white_text {
+    color: #FFFFFF; }
+    .one-column-content .white_text p, .one-column-content .white_text a {
+      font-size: 20px; }
+    .one-column-content .white_text a {
+      color: #FFFFFF; }
+    .one-column-content .white_text h3 {
+      color: #FFFFFF;
+      font-size: 30px; }
