@@ -77,10 +77,10 @@ li {
   .hero-text__image {
     width: 160px;
     height: 160px;
-    border-radius: 100%;
-    border: 3px solid #FFFFFF;
+   /* border-radius: 100%;
+    border: 3px solid #FFFFFF;*/
     margin: 0 auto;
-    background: url(../images/brandon.jpg) no-repeat center center;
+    /*background: url(../images/brandon.jpg) no-repeat center center;*/
     background-size: cover; }
   .hero-text h1 {
     text-transform: uppercase;
@@ -447,3 +447,44 @@ p {
   max-width: 85%;
   margin: 2% auto;
 }
+.wrapper{
+  margin:3em 0;
+}
+.one {
+  /*margin: 8px auto 5px auto;*/
+  width: 100%;
+  padding-left: 0;
+}
+
+.one a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.one a:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  content: '';
+  -webkit-transform: translateY(8px);
+  opacity: 0;
+  transition-property: -webkit-transform, opacity;
+  transition-duration: .3s;
+}
+
+.one a:hover:before {
+  -webkit-transform: translateY(0);
+  opacity: 1;
+}
+
+.white_text {
+  color: white;
+}
+
+
+
+
